@@ -1,162 +1,164 @@
-input.onButtonPressed(Button.A, function on_button_pressed_a() {
-    basic.showLeds(`
+def on_button_pressed_a():
+    basic.show_leds("""
         . . . . .
         . . . . .
         . . # . .
         . . . . .
         . . . . .
-        `)
-    basic.showLeds(`
+        """)
+    basic.show_leds("""
         # # # # #
         # . . . #
         # . . . #
         # . . . #
         # # # # #
-        `)
-    basic.showLeds(`
+        """)
+    basic.show_leds("""
         . . . . .
         . # # # .
         . # . # .
         . # # # .
         . . . . .
-        `)
-    basic.showLeds(`
+        """)
+    basic.show_leds("""
         . . . . .
         . . . . .
         . . # . .
         . . . . .
         . . . . .
-        `)
-    basic.showLeds(`
+        """)
+    basic.show_leds("""
         # # # # #
         # . . . #
         # . . . #
         # . . . #
         # # # # #
-        `)
-    basic.showLeds(`
+        """)
+    basic.show_leds("""
         . . . . .
         . # # # .
         . # . # .
         . # # # .
         . . . . .
-        `)
-    basic.showLeds(`
+        """)
+    basic.show_leds("""
         . . . . .
         . . . . .
         . . # . .
         . . . . .
         . . . . .
-        `)
-    basic.showLeds(`
+        """)
+    basic.show_leds("""
         . . . . .
         . . . . .
         . . . . .
         . . . . .
         . . . . .
-        `)
-    led.plotBrightness(4, 4, 33)
-})
-input.onButtonPressed(Button.B, function on_button_pressed_b() {
-    basic.showLeds(`
+        """)
+    led.plot_brightness(4, 4, 33)
+input.on_button_pressed(Button.A, on_button_pressed_a)
+
+def on_button_pressed_b():
+    basic.show_leds("""
         . . . . .
         . . . . .
         . . . . .
         . . . . .
         # . . . .
-        `)
-    basic.showLeds(`
+        """)
+    basic.show_leds("""
         . . . . .
         . . . . .
         . . . . .
         # . . . .
         # # . . .
-        `)
-    basic.showLeds(`
+        """)
+    basic.show_leds("""
         . . . . .
         . . . . .
         # . . . .
         # # . . .
         # # # . .
-        `)
-    basic.showLeds(`
+        """)
+    basic.show_leds("""
         . . . . .
         # . . . .
         # # . . .
         # # # . .
         # # # # .
-        `)
-    basic.showLeds(`
+        """)
+    basic.show_leds("""
         # . . . .
         # # . . .
         # # # . .
         # # # # .
         # # # # #
-        `)
-    basic.showLeds(`
+        """)
+    basic.show_leds("""
         # # . . .
         # # # . .
         # # # # .
         # # # # #
         . # # # #
-        `)
-    basic.showLeds(`
+        """)
+    basic.show_leds("""
         # # # . .
         # # # # .
         # # # # #
         . # # # #
         . . # # #
-        `)
-    basic.showLeds(`
+        """)
+    basic.show_leds("""
         # # # # .
         # # # # #
         . # # # #
         . . # # #
         . . . # #
-        `)
-    basic.showLeds(`
+        """)
+    basic.show_leds("""
         # # # # #
         . # # # #
         . . # # #
         . . . # #
         . . . . #
-        `)
-    basic.showLeds(`
+        """)
+    basic.show_leds("""
         . # # # #
         . . # # #
         . . . # #
         . . . . #
         . . . . .
-        `)
-    basic.showLeds(`
+        """)
+    basic.show_leds("""
         . . # # #
         . . . # #
         . . . . #
         . . . . .
         . . . . .
-        `)
-    basic.showLeds(`
+        """)
+    basic.show_leds("""
         . . . # #
         . . . . #
         . . . . .
         . . . . .
         . . . . .
-        `)
-    basic.showLeds(`
+        """)
+    basic.show_leds("""
         . . . . #
         . . . . .
         . . . . .
         . . . . .
         . . . . .
-        `)
-    basic.showLeds(`
+        """)
+    basic.show_leds("""
         . . . . .
         . . . . .
         . . . . .
         . . . . .
         . . . . .
-        `)
-})
-basic.forever(function on_forever() {
-    
-})
+        """)
+input.on_button_pressed(Button.B, on_button_pressed_b)
+
+def on_forever():
+    pass
+basic.forever(on_forever)
